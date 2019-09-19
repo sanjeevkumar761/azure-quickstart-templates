@@ -67,3 +67,4 @@ DB Internal Load Balancer probe port: **62504**
 6. sudo yum install libtool-ltdl  
 7. cd SAP_HANA_DATABASE  
 8. sudo ./hdblcm and enter values as mentioned here https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/virtual-machines/workloads/sap/sap-hana-high-availability-rhel.md#install-sap-hana  in step "Install SAP HANA" 
+9. Once HANA instance setup is complete, "sudo su - hn1adm" and run "sapcontrol -nr 03 -function GetProcessList". All HANA processes should be in green.
