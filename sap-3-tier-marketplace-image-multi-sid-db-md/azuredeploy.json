@@ -20,6 +20,7 @@
         "SLES 12",
         "SLES 12 BYOS",
         "RHEL 7",
+        "RHEL 7.2 for SAP HANA",
         "Oracle Linux 7"
       ],
       "defaultValue": "Windows Server 2012 R2 Datacenter",
