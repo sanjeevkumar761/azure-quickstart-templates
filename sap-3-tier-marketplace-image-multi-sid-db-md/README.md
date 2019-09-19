@@ -57,3 +57,13 @@ DB Internal Load Balancer probe port: **62504**
 		<td>1xGS5 DB Server (6xP30 1xP30)</td>
 	</tr>
 </table>
+
+## How to install Single Node HANA DB in RHEL 7.2 SAP for HANA image based VM  
+1. cd into /mnt/resource  
+2. sudo wget https://saphanaterraformsa.blob.core.windows.net/sapbits/IMDB_SERVER100_122_26-10009569.SAR  
+3. sudo wget https://saphanaterraformsa.blob.core.windows.net/sapbits/SAPCAR_1211-80000935.EXE  
+4. sudo chmod +x SAPCAR_1211-80000935.EXE  
+5. sudo ./SAPCAR_1211-80000935.EXE IMDB_SERVER100_122_26-10009569.SAR  
+6. sudo yum install libtool-ltdl  
+7. cd SAP_HANA_DATABASE  
+8. sudo ./hdblcm and enter values as mentioned here https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/virtual-machines/workloads/sap/sap-hana-high-availability-rhel.md#install-sap-hana  in step "Install SAP HANA" 
